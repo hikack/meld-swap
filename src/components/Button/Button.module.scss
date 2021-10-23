@@ -1,0 +1,28 @@
+@import "styles/variables";
+
+.button {
+  cursor: pointer;
+  background: $color-secondary;
+  border: none;
+  border-radius: 1.5rem;
+  height: 4rem;
+  width: 100%;
+  color: $color-white-400;
+  font-weight: bold;
+  transition: background 0.5s ease-out;
+  border: 1px solid $color-primary;
+  will-change: transform;
+  transition: transform 50ms ease-out;
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,73 @@
+@import "styles/variables";
+
+.wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coinIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.downIcon {
+  color: $color-white-400;
+  margin-left: 0.5rem;
+}
+
+.coinsListWrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coinsList {
+  width: 75%;
+  height: 90%;
+  max-width: 40rem;
+  max-height: 70rem;
+  overflow-y: auto;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.itemTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.itemSymbol {
+  font-weight: bold;
+}
+
+.itemPrice {
+  font-weight: bold;
+}

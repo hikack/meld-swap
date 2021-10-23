@@ -1,0 +1,35 @@
+@import "styles/variables";
+
+.wrapper {
+  background: $color-secondary;
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  & + & {
+    margin-top: 0.5rem;
+  }
+}
+
+.label {
+  margin: 0;
+}
+
+.balance {
+  margin: 0;
+  font-size: 75%;
+}
+
+.input {
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $color-white-500;
+}
